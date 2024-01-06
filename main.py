@@ -174,7 +174,7 @@ def fpasswordok():
             cursor.execute(z)
             data = cursor.fetchall()
             f = data[0][0]
-            s.sendmail('aalascare@gmail.com',mailentry.get(),f)
+            s.sendmail('email id that you created for alerts',mailentry.get(),f)
             try:
                     fpasswordmain.destroy()
             except:
@@ -434,7 +434,7 @@ def mainaftersignup():
                                 con.commit()
                                 with open('aalas.txt') as f:
                                         r = f.read()
-                                s.sendmail('aalascare@gmail.com',emailentry.get(),r)
+                                s.sendmail('email id that you created for alerts',emailentry.get(),r)
                                 cursor.execute("select USERNAME,EMAIL,NAME from users where USERNAME = '{}' ;".format(unamerentry.get()))
                                 data = cursor.fetchall()
                                 global username_all
@@ -975,7 +975,7 @@ def newpassword():
                         change = Label(passwordchangemain,text='Password change successful',bg='black',fg='White')
                         change.config(font=("Courier",30))
                         change.pack()
-                        s.sendmail('aalascare@gmail.com',email_all,p)
+                        s.sendmail('email id that you created for alerts',email_all,p)
                 else:
                         userpasssss = Label(passwordchangemain,text='Password did not match',bg='black',fg='White')
                         userpasssss.config(font=("Courier",30))
@@ -1025,7 +1025,7 @@ def newemail():
             emailchange = Label(emailchangemain,text = 'Email Change Successful',bg='black',fg='White')
             emailchange.config(font=("Courier",30))
             emailchange.pack(pady=30)
-            s.sendmail('aalascare@gmail.com',curremailentry.get(),'Your Email was Changed Successfully!!')
+            s.sendmail('email id that you created for alerts',curremailentry.get(),'Your Email was Changed Successfully!!')
         else:
              already=Label(emailchangemain,text='Incorrect Email Format',bg='black',fg='white')
              already.config(font=("Courier",30))
