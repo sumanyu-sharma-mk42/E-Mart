@@ -32,7 +32,7 @@ cursor = con.cursor()
 
 s = smtplib.SMTP('smtp.gmail.com',587)
 s.starttls()
-s.login('aalascare@gmail.com','elcf cocx rlnx kovu')
+s.login('email id that you created for alerts','16 digit app password')
 x=0
 regex = "^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$"
 um =am=em = ''
