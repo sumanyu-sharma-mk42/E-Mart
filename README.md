@@ -14,7 +14,7 @@
 ## How to run the code locally
 - First a database called "app" is created from the code itself, just replace the username and password of your MySql in the code (line 16 and 28).
 - All the files should be in the same folder
-- Write your email id for receiving alerts in line 35,177,437,978,1028 in place of 
+- Write your email id for receiving alerts in line 35,177,437,978,1028 in place of 'email id that you created for alerts'
 - Download all the modules imported in the code
 - Locally run the app on your PC.
 
