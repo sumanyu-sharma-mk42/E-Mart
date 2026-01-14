@@ -10,7 +10,7 @@ import mysql.connector as m
 import PIL
 from PIL import Image
 import re
-
+# changed this
 # connection database
 
 mydb = m.connect(
